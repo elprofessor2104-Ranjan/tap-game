@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Earn Money - Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">EL</div>
+  <nav>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+  </nav>
+</header>
+
+<main>
+  <div class="counter-box">
+    <button id="tapBtn" class="tap-btn">Tap Here</button>
+    <div class="count-display"><span id="count">0</span></div>
+  </div>
+
+  <div class="actions">
+    <button id="redeemBtn" class="action-btn">Redeem</button>
+    <button id="readTCBtn" class="action-btn">Read T&C</button>
+  </div>
+</main>
+
+<footer>
+  © EL - All Rights Reserved | Created by elprofessor2104@gmail.com
+</footer>
+
+<!-- Redeem Modal -->
+<div class="modal" id="redeemModal">
+  <div class="modal-content">
+    <h2>Redeem Request</h2>
+    <input type="text" id="upiInput" placeholder="Enter UPI ID" />
+    <button id="redeemNow" class="action-btn">Redeem Now</button>
+    <button class="close" data-close>Close</button>
+    <p id="redeemMsg"></p>
+  </div>
+</div>
+
+<!-- T&C Modal -->
+<div class="modal" id="tcModal">
+  <div class="modal-content">
+    <h2>How Redemption Works</h2>
+    <ul>
+      <li>Minimum redeem: 1 Lakh points.</li>
+      <li>5,000 points = 1 INR.</li>
+      <li>Payment will be processed via UPI within 48 hours.</li>
+      <li>Enter correct UPI to avoid failure.</li>
+    </ul>
+    <button class="close" data-close>Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
